@@ -326,3 +326,4 @@ PRODUCT-SERVICE     WALLET-SERVICE       CART-SERVICE
 
 ### Q10: How do you track a single user request across multiple microservice logs?
 > **Answer**: *"Our API Gateway uses a `CorrelationIdGlobalFilter` that inspects incoming requests for an `X-Correlation-Id` header. If missing, it generates a unique UUID and propagates it to all downstream microservices and the response headers. All microservices include this correlation ID in their SLF4J logs, allowing developers to trace the entire lifecycle of a distributed transaction using a single ID."*
+
