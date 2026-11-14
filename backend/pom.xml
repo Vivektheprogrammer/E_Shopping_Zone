@@ -95,6 +95,14 @@
         </dependencies>
     </dependencyManagement>
 
+    <dependencies>
+        <!-- Spring Boot Starter AOP for Aspect-Oriented Logging -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <!-- Enforce Java 8 Compiler Standards -->

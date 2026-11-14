@@ -28,7 +28,7 @@ Based on the **Capgemini Java Full Stack (JFS) Case Study Rubric**, the project 
 | **3** | **Working Demonstration / E2E Demo** | ✅ **100% Done** | Spring Boot 2.7.x + Spring Cloud 2021.x + Spring Data JPA + MySQL 8 + React 18 frontend with end-to-end checkout. |
 | **4** | **Ability to Apply Concepts (Bonus)** | ✅ **100% Done** | Saga Orchestration with rollbacks, Refresh Token Rotation, Pessimistic Row Locking, Anti-IDOR checks, GitHub OAuth2 SSO. |
 | **5** | **Coding Standards & Clean Techniques** | ✅ **100% Done** | Standard package structure, zero entity leakage (DTO layer), interface-driven services, PascalCase/camelCase conventions. |
-| **6** | **AOP & Loggers (SLF4J + Logfile)** | ⚠️ **Recommended** | SLF4J active in all classes. Spring AOP logging aspect and file appender (`logs/*.log`) to be attached. |
+| **6** | **AOP & Loggers (SLF4J + Logfile)** | ✅ **100% Done** | Spring AOP Logging Aspect (`@Aspect`, `@Around`) intercepting all Controllers/Services; automated rotating log files (`logs/<service>.log`). |
 | **7** | **JUnit + Mockito Testing** | ✅ **Passed** | Unit and integration test suites present for Profile, Product, Cart, Order, and Wallet services; 20 frontend Vitest suites passing. |
 | **8** | **Exception Handling & Data Validation** | ✅ **100% Done** | Global `@RestControllerAdvice` exception handlers in every service; `@Valid` Bean Validation on all request DTOs. |
 | **9** | **DevOps Implementation** | ⚠️ **In Progress** | Maven multi-module parent POM configured. Dockerfiles, `docker-compose.yml`, and SonarQube properties to be integrated. |
