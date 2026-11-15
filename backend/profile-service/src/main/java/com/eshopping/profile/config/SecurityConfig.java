@@ -79,7 +79,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                             "/api/auth/register-merchant",
                             "/api/auth/login",
                             "/api/auth/refresh",
-                            "/api/auth/oauth2/exchange"
+                            "/api/auth/oauth2/exchange",
+                            "/error"
                     ).permitAll()
                     // OpenAPI & Swagger Documentation
                     .antMatchers(

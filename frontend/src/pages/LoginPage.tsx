@@ -43,9 +43,9 @@ export const LoginPage: React.FC = () => {
   };
 
   const handleGitHubLogin = () => {
-    // Direct to Profile Service so the session cookie matches GitHub callback domain
+    // Route through API Gateway so the session cookie matches GitHub callback domain
     const host = window.location.hostname || 'localhost';
-    window.location.href = `http://${host}:8081/oauth2/authorization/github`;
+    window.location.href = `http://${host}:8080/oauth2/authorization/github`;
   };
 
   return (
